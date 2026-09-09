@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=0.9"/>
+  <title>Web mod skin PHÚC</title>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="darkmode.css" rel="stylesheet"/>
+  <link href="splashArt.css" rel="stylesheet"/>
+  <link href="skinlist.css" rel="stylesheet"/>
+  <link href="xapk.css" rel="stylesheet"/>
+  <link href="settingsanimation.css" rel="stylesheet"/>
+  <link href="components.css" rel="stylesheet"/>
+  <link href="img/datallain.png" rel="icon" type="image/png"/>
+ </head>
+ <body>
+  <header>
+   <div class="app-header">
+    <a href="https://youtube.com/@datallain07"> <img class="icon-img small" src="img/datallain.png"/></a>
+    <h1>
+     PHUC WEB (nguồn: đạt allain 07)
+    </h1>
+    <img class="icon-img small" id="menu-button" src="icons/menu.png"/>
+   </div>
+  </header>
+  <div class="overlay" id="overlay">
+  </div>
+  <div class="side-menu" id="side-menu">
+   <div class="side-menu-content">
+    <h2>TÀI KHOẢN</h2>
+    <div class="menusettings-item">
+ <div class="text">
+  <div id="account-wrapper" class="account-line">
+ <img src="img/default.png" class="avatar">
+ <div>
+  <div id="accountStatus">Hiện chưa đăng nhập</div>
+  <div id="memberStatus" class="fade account-note">Chưa có tài khoản? Liên hệ admin để đăng kí</div>
+ </div>
+</div>
+
+<button id="loginBtn" class="change-music-btn">Đăng nhập</button>
+<button id="logoutBtn" class="change-music-btn" style="display:none;">Đăng xuất</button>
+ </div>
+</div><br>
+    <h2>
+     CÀI ĐẶT TRANG WEB
+    </h2>
+    <div class="menusettings-item">
+     <div class="text">
+      <strong>
+       CHUNG
+      </strong>
+      <br/>
+      <div class="toggle-wrap">
+       <label class="switch">
+        <input id="toggle-animation" type="checkbox"/>
+        <span class="slider">
+        </span>
+       </label>
+       <span class="toggle-label">
+        Animation
+       </span>
+      </div>
+      <br/>
+      <div class="toggle-wrap">
+       <label class="switch">
+        <input id="darkModeToggle" type="checkbox"/>
+        <span class="slider">
+        </span>
+       </label>
+       <span class="toggle-label">
+        Dark Mode
+       </span>
+      </div>
+      <br/>
+     <div class="toggle-wrap">
+       <label class="switch">
+        <input checked="" id="toggle-music" type="checkbox"/>
+        <span class="slider">
+        </span>
+       </label>
+       <span class="toggle-label">
+        Nhạc nền
+       </span>
+       <br/>
+       <button class="change-music-btn" id="changeMusicBtn">
+        Đổi nhạc nền
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="menusettings-item">
+     <div class="text">
+      <strong>HIỆU ỨNG RGB</strong>
+      <div class="toggle-wrap">
+       <input id="rgbGlowRange" type="range" min="0" max="2" step="1" value="2" />
+       <div class="range-labels">
+        <span>Tắt</span>
+        <span>Chỉ viền</span>
+        <span>Max</span>
+       </div><br>
+       <div class="range-tip">Bật DarkMode để có trải nghiệm tốt hơn</div>
+      </div>
+     </div>
+    </div>
+     <div class="menusettings-item">
+     <div class="text">
+      <strong>
+       CHỌN MOD
+      </strong>
+      <br/>
+      <div class="toggle-wrap">
+       <label class="switch">
+        <input id="reduceQualityToggle" type="checkbox"/>
+        <span class="slider">
+        </span>
+       </label>
+       <span class="toggle-label">
+        Giảm chất lượng hình ảnh
+       </span>
+      </div>
+      <br/>
+      <div class="toggle-wrap">
+       <label class="switch">
+        <input checked="" id="toggle-video-preview" type="checkbox"/>
+        <span class="slider">
+        </span>
+       </label>
+       <span class="toggle-label">
+        Splash Animate
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="menusettings-item">
+     <div class="text">
+      <strong>
+       THƯ VIỆN SPLASH ART
+      </strong>
+      <br/>
+      <div class="toggle-wrap">
+       <label class="switch">
+        <input id="toggle-show-id" type="checkbox"/>
+        <span class="slider">
+        </span>
+       </label>
+       <span class="toggle-label">
+        Thông tin tướng/skin
+       </span>
+      </div>
+      <br/>
+      <div class="toggle-wrap">
+       <label class="switch">
+        <input id="toggle-show-label" type="checkbox"/>
+        <span class="slider">
+        </span>
+       </label>
+       <span class="toggle-label">
+        Label Skin
+       </span>
+      </div>
+     </div>
+    </div>
+    <br/>
+    <h2>
+     KHÁC
+    </h2>
+    <div class="menusettings-item">
+     <div class="text">
+      <strong>
+       THEO DÕI PHÚC MOD
+      </strong>
+      <br/>
+      <div class="menu-item">
+       <img class="icon-img" src="icons/ytb.png"/>
+       <div class="text">
+        <a href="https://youtube.com/@tapxaykenh888?si=_OiEGESzD7TBwhik" target="_blank">
+         <strong>
+          YOUTUBE
+         </strong>
+        </a>
+       </div>
+      </div>
+      <div class="menu-item">
+       <img class="icon-img" src="icons/tik.png"/>
+       <div class="text">
+        <a href="
+        https://www.tiktok.com/@datallain07?_r=1&_t=ZS-96uMaezM1jA" target="_blank">
+         <strong>
+          TIKTOK
+         </strong>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <br><br><br><br><br><br>
+   </div>
+  </div>
+  <main class="menu">
+   <div id="menu-items"></div>
+   <div class="donate-overlay" id="donate-popup">
+    <div class="donate-content">
+     <div class="donate-img-wrapper">
+      <img class="donate-qr" src="icons/qr.png"/>
+      <p class="donate-message">
+       chưa có phần donate
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="popup-overlay" id="welcome-popup">
+    <div class="popup-content">
+     <img class="popup-icon" src="img/datallain.png"/>
+     <h1 class="popup-title">
+      YouTube: Hoang Mod
+     </h1>
+     <p class="popup-message">
+      <b>
+       Chào mừng đến với Phuc mod🎉
+      </b>
+     </p>
+     <button id="close-popup">
+     </button>
+    </div>
+   </div>
+   <div class="music-popup" id="musicPopup">
+    <div class="music-popup-content">
+     <h3>
+      Chọn nhạc nền
+     </h3>
+     <ul id="musicList">
+     </ul>
+    </div>
+   </div>
+   <div class="toast" id="toast">
+    <div class="toast-text">
+     <strong>
+      Thông báo trang web
+     </strong>
+     <br/>
+     <span id="toast-message">
+     </span>
+    </div>
+   </div>
+   <div class="dl-popup" id="dlPopupX">
+    <div class="dl-box">
+     <div class="preview-area">
+      <img class="preview-bg" id="dlBgX" alt="">
+      <div class="preview-info">
+       <img class="preview-mini" id="dlMiniX" alt="">
+       <div class="preview-texts">
+        <div class="dl-label" id="dlLabelX"></div>
+        <div class="preview-champion" id="dlChampX"></div>
+        <div class="preview-title" id="dlNameX"></div>
+        <div class="preview-desc" id="dlDescX"></div>
+       </div>
+      </div>
+     </div>
+     <div class="dl-popup-title-x" id="dlTitleX">
+      Bạn muốn tải xuống mod cho?
+     </div>
+     <div class="dl-buttons">
+      <a class="dl-btn" id="dlAndroidX">
+       Android
+      </a>
+      <a class="dl-btn" id="dlIOSX">
+       iOS
+      </a>
+     </div>
+    </div>
+   </div>
+   <div id="loginModal" class="login-modal">
+  <div class="login-box">
+    <h2>Đăng nhập tài khoản thành viên</h2>
+    <input type="text" id="usernameInput" placeholder="Tên Đăng Nhập"/>
+    <div class="password-wrapper">
+ <input type="password" id="passwordInput" placeholder="Mật khẩu" />
+ <span id="togglePassword" class="eye">&#128065;</span>
+</div>
+
+    <button id="submitLogin" class="change-music-btn">
+      Đăng Nhập
+    </button>
+
+    <div class="login-note">
+      Nếu quên mật khẩu, vui lòng liên hệ admin để đặt lại
+    </div>
+  </div>
+</div>
+   <div class="credit">©datallain07 | Ver5.0.6</div>
+   <br/>
+   <script defer src="menudata.js"></script>
+   <script defer src="darkmode.js"></script>
+   <script defer src="accounts.js"></script>
+   <script defer src="login.js"></script>
+   <script defer src="skinmod.js"></script>
+   <script defer src="xapk.js"></script>
+   <script defer src="heroskinshop.js"></script>
+   <script defer src="skinname.js"></script>
+   <script defer src="herolist.js"></script>
+   <script defer src="script.js"></script>
+   <script defer src="splashArt.js"></script>
+   <script defer src="skinlist.js"></script>
+   <script defer src="lowquality.js"></script>
+   <script defer src="settingsanimation.js"></script>
+   <script defer src="checkversion.js"></script>
+   <script defer src="checkskin.js"></script>
+   <script defer src="sound.js"></script>
+   <script defer src="welcome.js"></script>
+   <script defer src="rgb.js"></script>
+   <script defer src="donate.js"></script>
+  </main>
+ </body>
+</html>
