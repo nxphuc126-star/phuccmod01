@@ -2,9 +2,9 @@ const musicPlayer = new Audio();
   musicPlayer.loop = false;
 
   const musicData = [
+    { src: 'sound/kaito.mp3', name: 'Kaito Kid', img: 'img/kaito_mini.png' },
     { src: 'sound/fifai.mp3', name: 'Fifai', img: 'img/fifai.png' },
     { src: 'sound/conan.mp3', name: 'Conan', img: 'img/conan_mini.png' },
-    { src: 'sound/kaito.mp3', name: 'Kaito Kid', img: 'img/kaito_mini.png' },
     { src: 'sound/robin.mp3', name: 'Welcome To My World - Robin', img: 'img/robin.png' },
     { src: 'sound/ndcm.mp3', name: 'Nắng Dưới Chân Mây', img: 'img/ndcm.png' },
     { src: 'sound/13314.mp3', name: 'Valhein Thứ Nguyên Vệ Thần', img: 'img/3013314head.jpg' },
